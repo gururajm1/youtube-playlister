@@ -36,7 +36,7 @@ export function PlaylistDetails() {
   useEffect(() => {
     if (userEmail) {
       // Fetch user data from the backend
-      axios.get(`http://localhost:5000/api/users/${userEmail}`)
+      axios.get(`https://youtube-playlister-server-1.onrender.com/api/users/${userEmail}`)
         .then(response => {
           const user = response.data;
           const playlists = user.playlists;

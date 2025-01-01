@@ -94,7 +94,7 @@ function Dashboard() {
           const playlistsData = JSON.parse(storedPlaylists);
 
           // Send playlists and email to the backend to update the database
-          const response = await axios.post('http://localhost:5000/api/savePlaylists', {
+          const response = await axios.post('https://youtube-playlister-server-1.onrender.com/api/savePlaylists', {
             userEmail,
             playlists: playlistsData,
           });

@@ -97,7 +97,7 @@ export default function Signup({ setUser }) {
       };
   
       // Send the user object directly, without stringifying
-      const response = await axios.post("http://localhost:5000/api/store", newUser);
+      const response = await axios.post("https://youtube-playlister-server-1.onrender.com/api/store", newUser);
       
       console.log(response);
   
